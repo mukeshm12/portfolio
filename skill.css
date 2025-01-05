@@ -1,0 +1,112 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f7f7f7;
+    font-size: 16px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 60px 0 40px;
+    color: #333;
+  }
+  
+  /* Skills Section */
+  #skills {
+    padding: 40px 20px;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+  }
+  
+  .skill-category {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .skill-category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .skill-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ff6600;
+  }
+  
+  .skill-card p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .skill-bar {
+    height: 10px;
+    background-color: #e1e1e1;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .skill-level {
+    height: 100%;
+    width: 0%;
+    transition: width 1s ease-out;
+  }
+  
+  .html-css { width: 90%; background-color: #ff6600; }
+  .js { width: 85%; background-color: #ffcc00; }
+  .react { width: 80%; background-color: #61DBFB; }
+  .nodejs { width: 75%; background-color: #68A063; }
+  .database { width: 70%; background-color: #4f5b62; }
+  .uiux { width: 80%; background-color: #ff5733; }
+  .photoshop { width: 85%; background-color: #001f3d; }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .skills-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .skill-category {
+      width: 90%;
+    }
+  }
+  
